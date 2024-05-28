@@ -1,0 +1,15 @@
+/IEDriverServer.exe
+/chromedriver.exe
+/com/
+/commons/
+/geckodriver.exe
+/java/
+/msedgedriver.exe
+/pageObjects/
+/pageUIs/
+/reportConfig/
+/runNopCommerceTest.out.xml
+/runNopCommerceTest.xml
+/selenium-server-standalone-3.141.59.jar
+/testng-6.14.3.jar
+/utilities/
