@@ -1,5 +1,6 @@
 package com.nopcommerce.user;
 
+import java.time.Duration;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
@@ -22,10 +23,8 @@ import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
 import pageObjects.RegisterPageObject;
 
-public class Level_03_PageObject extends BasePage {
+public class Level_03_PageObject {
 	WebDriver driver;
-	Alert alert;
-	WebDriverWait explicitwait;
 	String projectPath = System.getProperty("user.dir");
 	String osName = System.getProperty("os.name");
 	private HomePageObject homePage;
@@ -42,8 +41,7 @@ public class Level_03_PageObject extends BasePage {
 		System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		
-		explicitwait = new WebDriverWait(driver, 10);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		driver.manage().window().maximize();
 		driver.get("https://demo.nopcommerce.com/");
 		// Mở 1 URL nó ở trang nào thì khởi tạo trang đó lên

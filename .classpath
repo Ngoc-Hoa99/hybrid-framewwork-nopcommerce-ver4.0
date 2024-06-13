@@ -13,8 +13,8 @@
 	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="src" path="testcases"/>
 	<classpathentry kind="src" path="testdata"/>
-	<classpathentry kind="src" path="libraries"/>
-	<classpathentry kind="lib" path="libraries/selenium-server-standalone-3.141.59.jar"/>
-	<classpathentry kind="lib" path="libraries/testng-6.14.3.jar"/>
+	<classpathentry kind="src" path="libSelenium"/>
+	<classpathentry kind="lib" path="libSelenium/testng-6.14.3.jar"/>
+	<classpathentry kind="lib" path="libSelenium/selenium-server-4.21.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
